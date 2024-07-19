@@ -1,11 +1,11 @@
-# MovetreeAD-migration command how to make to work on Windows Server 2019 
+# MovetreeAD-migration command how to make it work on Windows Server 2019 
 AD user account migration within the forest using native tools movetree.exe command. Example child domain to child or child to root domain.
 This command-line tool allows administrators to move Active Directory objects such as organizational units and users between the domains within a single forest. These operations are performed to support domain consolidation or organizational restructuring operations.
 Movetree.exe ships with Windows 2000 Support Tools
 Files required:
 Movetree.dll
 Movetree.exe
-Download the below files from repository 
+Download the below files from the repository 
 WindowsServer2003-KB340178-SP2-x86-ENU
 Copy Movetree.dll to C:\Windows\SysWOW64
 Copy Movetree.exe to C:\Windows\System32
