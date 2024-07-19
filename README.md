@@ -51,4 +51,3 @@ EXAMPLES:
            /u Dom1\administrator /p * /verbose
 
 movetree /start /s NA-BECOMADDS03.na.becomnet.com /d BLR-BECOMADDS01.becomnet.com /sdn "CN=test\, move,ou=Becomusersou,DC=na,DC=becomnet,DC=com" /ddn "CN=test\, move,OU=Becomnetusers,DC=becomnet,DC=com" /verbose
-==
