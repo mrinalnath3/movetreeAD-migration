@@ -43,9 +43,12 @@ EXAMPLES:
 
    User’s password must be of the length required by the destination domain. For example, if the user has a 12-characters password as required by the source domain destination domain requires a 12-digit password
    Verify the user’s group membership before moving a user account. Global groups are limited to having members from the domain the group exists in.
+
    There is one exception to this rule: If a user’s primary group is the Domain Users global group, and the user isn’t a member of any other global groups, the move will be successful. 
    The best practice to export the user's group membership and remove the group membership before executing the move tree command.
-   
 
   movetree /continue /s Server1.Dom1.Com /d Server2.Dom2.Com /ddn OU=foo,DC=Dom1,DC=Com
            /u Dom1\administrator /p * /verbose
+
+movetree /start /s NA-BECOMADDS03.na.becomnet.com /d BLR-BECOMADDS01.becomnet.com /sdn "CN=test\, move,ou=Becomusersou,DC=na,DC=becomnet,DC=com" /ddn "CN=test\, move,OU=Becomnetusers,DC=becomnet,DC=com" /verbose
+==
