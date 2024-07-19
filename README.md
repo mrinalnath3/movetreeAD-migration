@@ -5,7 +5,11 @@ Movetree.exe ships with Windows 2000 Support Tools
 Files required:
 Movetree.dll
 Movetree.exe
+Download the below files from repository 
 WindowsServer2003-KB340178-SP2-x86-ENU
+Copy Movetree.dll to C:\Windows\SysWOW64
+Copy Movetree.exe to C:\Windows\System32
+install Adminpack WindowsServer2003-KB340178-SP2-x86-ENU
 
 MoveTree returns ErrorLevel 0 for success and ErrorLevels 1 to 5 for different kinds of failures.
 
@@ -32,12 +36,11 @@ EXAMPLES:
            /ddn OU=foo,DC=Dom2,DC=Com /u Dom1\administrator /p *
 
   movetree /start /s Server1.Dom1.Com /d Server2.Dom2.Com /sdn OU=foo,DC=Dom1,DC=Com
-  
-           /ddn OU=foo,DC=Dom2,DC=Com /u Dom1\administrator /p MySecretPwd
+  /ddn OU=foo,DC=Dom2,DC=Com /u Dom1\administrator /p MySecretPwd
 
   movetree /startnocheck /s Server1.Dom1.Com /d Server2.Dom2.Com /sdn OU=foo,DC=Dom1,DC=Com
            /ddn OU=foo,DC=Dom2,DC=Com /u Dom1\administrator /p MySecretPwd
-  ===
+
    User’s password must be of the length required by the destination domain. For example, if the user has a 12-characters password as required by the source domain destination domain requires a 12-digit password
    Verify the user’s group membership before moving a user account. Global groups are limited to having members from the domain the group exists in.
    There is one exception to this rule: If a user’s primary group is the Domain Users global group, and the user isn’t a member of any other global groups, the move will be successful. 
