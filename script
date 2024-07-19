@@ -1,0 +1,8 @@
+The first command to verify if the account is ready to move
+movetree /check /s NA-BECOMADDS03.na.becomnet.com /d BLR-BECOMADDS01.becomnet.com /sdn "CN=test\, move,ou=Becomusersou,DC=na,DC=becomnet,DC=com" /ddn "CN=test\, move,OU=Becomnetusers,DC=becomnet,DC=com" /verbose
+
+The second command to execute the move
+movetree /start /s NA-BECOMADDS03.na.becomnet.com /d BLR-BECOMADDS01.becomnet.com /sdn "CN=test\, move,ou=Becomusersou,DC=na,DC=becomnet,DC=com" /ddn "CN=test\, move,OU=Becomnetusers,DC=becomnet,DC=com" /verbose
+
+Note:
+I have used "CN=test\, move. Because I have user display name "Test, Move"
